@@ -1,7 +1,9 @@
+import 'package:contactui/views/anita.dart';
+import 'package:contactui/views/denzel.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'contact_bio.dart';
+import 'views/contact_bio.dart';
 
 class Homeview extends StatelessWidget {
   const Homeview({ Key? key }) : super(key: key);
@@ -72,14 +74,19 @@ class Homeview extends StatelessWidget {
               ),
               Container(
         margin:const EdgeInsets.fromLTRB(20,0,0,10),
-        child: const ListTile(
-          leading:CircleAvatar(radius: 20,
-                backgroundColor: Colors.white,
-                backgroundImage: AssetImage('assets/images/anita.png'),
-            ),
-            title:Text("Anita Anush",style: TextStyle( fontWeight:FontWeight.w600)),
-            subtitle:Text("+233 54 74 86 757"),
-            trailing:Icon(Icons.more_horiz),
+        child:  InkWell(
+          onTap: (){Navigator.of(context).push(MaterialPageRoute(
+              builder: (BuildContext context) => const Anita()));
+                        },
+          child: const ListTile(
+            leading:CircleAvatar(radius: 20,
+                  backgroundColor: Colors.white,
+                  backgroundImage: AssetImage('assets/images/anita.png'),
+              ),
+              title:Text("Anita Anush",style: TextStyle( fontWeight:FontWeight.w600)),
+              subtitle:Text("+233 54 74 86 757"),
+              trailing:Icon(Icons.more_horiz),
+          ),
         ),
         
       ),
@@ -91,14 +98,19 @@ class Homeview extends StatelessWidget {
               ),
             Container(
         margin:const EdgeInsets.fromLTRB(20,0,0,10),
-        child: const ListTile(
-          leading:CircleAvatar(radius: 20,
-                backgroundColor: Colors.white,
-                backgroundImage: AssetImage('assets/images/denzel.png'),
-            ),
-            title:Text("Denzel Boateng",style: TextStyle( fontWeight:FontWeight.w600)),
-            subtitle:Text("+233 54 87 60 485"),
-            trailing:Icon(Icons.more_horiz),
+        child: InkWell(
+          onTap: (){Navigator.of(context).push(MaterialPageRoute(
+              builder: (BuildContext context) => const Denzel()));
+                        },
+          child: const  ListTile(
+            leading:CircleAvatar(radius: 20,
+                  backgroundColor: Colors.white,
+                  backgroundImage: AssetImage('assets/images/denzel.png'),
+              ),
+              title:Text("Denzel Boateng",style: TextStyle( fontWeight:FontWeight.w600)),
+              subtitle:Text("+233 54 87 60 485"),
+              trailing:Icon(Icons.more_horiz),
+          ),
         ),
         
       ),
@@ -110,14 +122,19 @@ class Homeview extends StatelessWidget {
               ),
                Container(
         margin:const EdgeInsets.fromLTRB(20,0,0,10),
-        child: const ListTile(
-          leading:CircleAvatar(radius: 20,
-                backgroundColor: Colors.white,
-                backgroundImage: AssetImage('assets/images/felix.png'),
-            ),
-            title:Text("Felix Oppong",style: TextStyle( fontWeight:FontWeight.w600)),
-            subtitle:Text("+233 54 67 54 458"),
-            trailing:Icon(Icons.more_horiz),
+        child:  InkWell(
+          onTap: (){Navigator.of(context).push(MaterialPageRoute(
+              builder: (BuildContext context) => const Denzel()));
+                        },
+          child: const ListTile(
+            leading:CircleAvatar(radius: 20,
+                  backgroundColor: Colors.white,
+                  backgroundImage: AssetImage('assets/images/felix.png'),
+              ),
+              title:Text("Felix Oppong",style: TextStyle( fontWeight:FontWeight.w600)),
+              subtitle:Text("+233 54 67 54 458"),
+              trailing:Icon(Icons.more_horiz),
+          ),
         ),
         
       ),
@@ -143,14 +160,19 @@ class Homeview extends StatelessWidget {
               ),
               Container(
         margin:const EdgeInsets.fromLTRB(20,0,0,10),
-        child: const ListTile(
-          leading:CircleAvatar(radius: 20,
-                backgroundColor: Colors.white,
-                backgroundImage: AssetImage('assets/images/anita.png'),
-            ),
-            title:Text("Anita Anush",style: TextStyle( fontWeight:FontWeight.w600)),
-            subtitle:Text("+233 54 74 86 757"),
-            trailing:Icon(Icons.more_horiz),
+        child: InkWell(
+          onTap: (){Navigator.of(context).push(MaterialPageRoute(
+              builder: (BuildContext context) => const Anita()));
+                        },
+          child: const ListTile(
+            leading:CircleAvatar(radius: 20,
+                  backgroundColor: Colors.white,
+                  backgroundImage: AssetImage('assets/images/anita.png'),
+              ),
+              title:Text("Anita Anush",style: TextStyle( fontWeight:FontWeight.w600)),
+              subtitle:Text("+233 54 74 86 757"),
+              trailing:Icon(Icons.more_horiz),
+          ),
         ),
         
         
@@ -163,14 +185,19 @@ class Homeview extends StatelessWidget {
               ),
       Container(
         margin:const EdgeInsets.fromLTRB(20,0,0,10),
-        child: const ListTile(
-          leading:CircleAvatar(radius: 20,
-                backgroundColor: Colors.white,
-                backgroundImage: AssetImage('assets/images/ant.png'),
-            ),
-            title:Text("Antonio Fernandez",style: TextStyle( fontWeight:FontWeight.w600)),
-            subtitle:Text("+61 2 7546 1187"),
-            trailing:Icon(Icons.more_horiz),
+        child: InkWell(
+          onTap: (){Navigator.of(context).push(MaterialPageRoute(
+              builder: (BuildContext context) => const Denzel()));
+                        },
+          child: const ListTile(
+            leading:CircleAvatar(radius: 20,
+                  backgroundColor: Colors.white,
+                  backgroundImage: AssetImage('assets/images/ant.png'),
+              ),
+              title:Text("Antonio Fernandez",style: TextStyle( fontWeight:FontWeight.w600)),
+              subtitle:Text("+61 2 7546 1187"),
+              trailing:Icon(Icons.more_horiz),
+          ),
         ),
         
       ),
@@ -189,14 +216,19 @@ class Homeview extends StatelessWidget {
               ),
               Container(
         margin:const EdgeInsets.fromLTRB(20,0,0,10),
-        child: const ListTile(
-          leading:CircleAvatar(radius: 20,
-                backgroundColor: Colors.white,
-                backgroundImage: AssetImage('assets/images/frost.png'),
-            ),
-            title:Text("Bernard Mousky",style: TextStyle( fontWeight:FontWeight.w600)),
-            subtitle:Text("+254 67 26797"),
-            trailing:Icon(Icons.more_horiz),
+        child: InkWell(
+          onTap: (){Navigator.of(context).push(MaterialPageRoute(
+              builder: (BuildContext context) => const Denzel()));
+                        },
+          child: const ListTile(
+            leading:CircleAvatar(radius: 20,
+                  backgroundColor: Colors.white,
+                  backgroundImage: AssetImage('assets/images/frost.png'),
+              ),
+              title:Text("Bernard Mousky",style: TextStyle( fontWeight:FontWeight.w600)),
+              subtitle:Text("+254 67 26797"),
+              trailing:Icon(Icons.more_horiz),
+          ),
         ),
         
       ),
