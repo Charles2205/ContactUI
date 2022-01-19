@@ -1,5 +1,6 @@
 import 'package:contactui/homeview.dart';
 import 'package:flutter/material.dart';
+import 'dart:ui';
 
 void main() {
   runApp(const ContactUi());
@@ -14,13 +15,11 @@ class ContactUi extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Contact Ui',
-      theme: ThemeData(
-        primarySwatch: Colors.pink,
-        primaryColor: const Color.fromRGBO(189, 189, 189, 1),
-      ),
+      // theme: (
+      //   // primarySwatch: Colors.blue,
+      //   // primaryColor: const Color.fromRGBO(189, 189, 189, 1),
+      // ),
       home:const Homeview()
     );
   }
 }
-
-

@@ -3,6 +3,7 @@ import 'package:contactui/views/denzel.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'views/add_new_contact.dart';
 import 'views/contact_bio.dart';
 
 class Homeview extends StatelessWidget {
@@ -285,7 +286,9 @@ class Homeview extends StatelessWidget {
         ),
         floatingActionButton: FloatingActionButton(
           backgroundColor: const Color.fromRGBO(24, 74, 218, 1),
-          onPressed: (){},
+          onPressed: (){  {Navigator.of(context).push(MaterialPageRoute(
+              builder: (BuildContext context) => const Create()));
+                        }    },
            child: const Icon(
           Icons.add_outlined,
           size: 28,
